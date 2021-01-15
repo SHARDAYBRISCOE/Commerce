@@ -8,12 +8,20 @@
 	<style type="text/css">
 		#dashboard{
 			padding-top: 50px;
+			margin: 30px;
 		}
 		.navbar a{
 			color: red !important;
 		}
+
+		.nav-item:hover{
+			border-bottom: 2px red solid;
+		}
+		#sign{
+
+		}
 		#footer{
-			margin-top: 500px;
+			margin-top: 300px;
 			padding-top: 50px;
 			background-color: red;
 			height: 240px;
@@ -29,23 +37,39 @@
 		.bi{
 			font-size: 2em;
 			margin: 80px;
+			padding-bottom: 8px;
+		}
+
+		.bi:hover{
+		border-bottom: 8px white solid;			
+		border-top: 8px white solid;			
 		}
 	</style>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <div class="container-fluid">
+ 	<div class="navbar-header">
   <a class="navbar-brand" href="#">Commerce</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+</div>
+
+
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#">Products</a>
       <a class="nav-item nav-link" href="#">Customer</a>
+      <a class="nav-item nav-link" href="#">Sign In / Log In</a>
     </div>
+
   </div>
+
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</div> 
+
 </nav>
 
 {% block content %}
